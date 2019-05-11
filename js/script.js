@@ -31,7 +31,7 @@ $(function(){
       document.addEventListener("gesturestart", gestureStart, false);
     }
   };
-  
+
   scaleFix();
   // Menu Android
   if(window.orientation!=undefined){
@@ -48,7 +48,7 @@ $(function(){
        window.location.href = $(this).attr("href");
       }
      );
-    } 
+    }
    })
   }
  }
@@ -73,10 +73,12 @@ var currentYear = (new Date).getFullYear();
 
 $(document).ready(function(){
   $('.slider-logo').slick({
-    slidesToShow: 1,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
-    arrows: true
+    autoplaySpeed: 3000,
+    arrows: true,
+    prevArrow: ('<i class="fas fa-chevron-left"></i>'),
+    nextArrow: ('<i class="fas fa-chevron-right"></i>')
 });
 });
