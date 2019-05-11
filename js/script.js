@@ -71,3 +71,12 @@ var currentYear = (new Date).getFullYear();
   $('.sf-menu').superfish({autoArrows: true})
 })
 
+$(document).ready(function(){
+  $('.slider-logo').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: true
+});
+});

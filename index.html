@@ -12,10 +12,12 @@
 		<link rel="stylesheet" href="css/owl.carousel.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&amp;subset=cyrillic" rel="stylesheet">
 
-		<!--<link rel="stylesheet" href="css/skeleton.css">-->
+    <!--<link rel="stylesheet" href="css/skeleton.css">-->
 		<script src="js/jquery.js"></script>
 		<script src="js/jquery-migrate-1.2.1.js"></script>
 		<script src="js/script.js"></script>
@@ -73,31 +75,42 @@
 		<header class="header">
 			<div class="container">
 				<div class="section__wrap">
-					<div class="header__logo">
-						<a href="index.html"><img src="images/logo.png" alt="Logo"></a>
-					</div>
-					<div class="menu_block">
-						<nav class="horizontal-nav full-width horizontalNav-notprocessed">
-							<ul class="sf-menu">
-								<li class="current"><a href="index.html">Главная</a></li>
-								<li><a href="hottours.html">Горящие туры</a></li>
-								<li><a href="offers.html">Предложения</a></li>
-								<li><a href="blog.html">Блог</a></li>
-								<li><a href="contact.html">Контакты</a></li>
-							</ul>
-						</nav>
-					</div>
-					<div class="header__contact">
-						<a class="phone" href="tel:+380932372586">+38 (093) 237-25-86</a>
-						<a class="phone" href="tel:+380685170337">+38 (068) 517-03-37</a>
-						<a class="phone" href="tel:+380991969838">+38 (099) 196-98-38</a>
-						<a href="mailto:kates.agency@gmail.com">kates.agency@gmail.com</a>
-						<p class="location">Город Харьков, ул. Пушкинская 5, оф №320 (3 этаж)</p>
-
-					</div>
+					<div class="section__wrap__nav-top">
+            <div class="section__wrap__nav-top--left">
+              <div class="header__contact contact__top-left">
+                <a href="mailto:kates.agency@gmail.com">kates.agency@gmail.com</a>
+                <p class="location">Харьков, ул. Пушкинская 5, оф №320 3 этаж</p>
+              </div>
+            </div>
+            <div class="header__logo">
+              <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+            </div>
+            <div class="section__wrap__nav-top--right">
+              <div class="header__contact contact__top-right">
+                <a class="phone" href="tel:+380932372586">+38 093 237-25-86</a>
+                <a class="phone" href="tel:+380685170337">+38 068 517-03-37</a>
+                <a class="phone" href="tel:+380991969838">+38 099 196-98-38</a>
+              </div>
+            </div>
+          </div>
+          <div class="section__wrap__nav-bottom">
+            <div class="menu_block">
+              <nav class="horizontal-nav full-width horizontalNav-notprocessed">
+                <ul class="sf-menu">
+                  <li class="current"><a href="index.html">Главная</a></li>
+                  <li><a href="hottours.html">Горящие туры</a></li>
+                  <li><a href="blog.html">Блог</a></li>
+                  <li><a href="offers.html">Предложения</a></li>
+                  <li><a href="contact.html">Контакты</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
 				</div>
 			</div>
 		</header>
+
+<!--==============================hero Slider=================================-->
 		<main>
 		<section class="slider_wrapper">
 			<div id="camera_wrap" class="">
@@ -171,170 +184,130 @@
 		<section class="posts new-posts">
 			<div class="container">
 				<div class="section__wrap">
-					<div class="grid_4">
-						<div class="banner">
-							<img src="images/ban_img1.jpg" alt="">
-							<div class="label">
-								<div class="title">Барселона</div>
-								<div class="price">от<span>$ 589</span></div>
-								<a href="#">Подробнее</a>
-							</div>
-						</div>
-					</div>
-					<div class="grid_4">
-						<div class="banner">
-							<img src="images/ban_img2.jpg" alt="">
-							<div class="label">
-								<div class="title">ГОа</div>
-								<div class="price">от<span>$ 1.700</span></div>
-								<a href="#">Подробнее</a>
-							</div>
-						</div>
-					</div>
-					<div class="grid_4">
-						<div class="banner">
-							<img src="images/ban_img3.jpg" alt="">
-							<div class="label">
-								<div class="title">Париж</div>
-								<div class="price">от<span>$ 499</span></div>
-								<a href="#">Подробнее</a>
-							</div>
-						</div>
-					</div>
-					<div class="grid_4">
-						<div class="banner">
-							<img src="images/ban_img3.jpg" alt="">
-							<div class="label">
-								<div class="title">РИМ</div>
-								<div class="price">от<span>$ 399</span></div>
-								<a href="#">Подробнее</a>
-							</div>
-						</div>
-					</div>
-				</div>
+          <div class="section__wrap__posts">
+            <div class="onePost">
+              <div class="banner">
+                <img src="images/ban_img1.jpg" alt="">
+                <div class="label">
+                  <div class="title">Барселона</div>
+                  <div class="price">от<span>$ 589</span></div>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="onePost">
+              <div class="banner">
+                <img src="images/ban_img2.jpg" alt="">
+                <div class="label">
+                  <div class="title">ГОа</div>
+                  <div class="price">от<span>$ 1.700</span></div>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="onePost">
+              <div class="banner">
+                <img src="images/ban_img3.jpg" alt="">
+                <div class="label">
+                  <div class="title">Париж</div>
+                  <div class="price">от<span>$ 499</span></div>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="onePost">
+              <div class="banner">
+                <img src="images/ban_img3.jpg" alt="">
+                <div class="label">
+                  <div class="title">РИМ</div>
+                  <div class="price">от<span>$ 399</span></div>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 			</div>
 		</section>
-				<!--<div class="grid_6">-->
-					<!--<h3>Booking Form</h3>-->
-					<!--<form id="bookingForm">-->
-						<!--<div class="fl1">-->
-							<!--<div class="tmInput">-->
-								<!--<input name="Name" placeHolder="Name:" type="text" data-constraints='@NotEmpty @Required @AlphaSpecial'>-->
-							<!--</div>-->
-							<!--<div class="tmInput">-->
-								<!--<input name="Country" placeHolder="Country:" type="text" data-constraints="@NotEmpty @Required">-->
-							<!--</div>-->
-						<!--</div>-->
-						<!--<div class="fl1">-->
-							<!--<div class="tmInput">-->
-								<!--<input name="Email" placeHolder="Email:" type="text" data-constraints="@NotEmpty @Required @Email">-->
-							<!--</div>-->
-							<!--<div class="tmInput mr0">-->
-								<!--<input name="Hotel" placeHolder="Hotel:" type="text" data-constraints="@NotEmpty @Required">-->
-							<!--</div>-->
-						<!--</div>-->
-						<!--<div class="clear"></div>-->
-						<!--<strong>Check-in</strong>-->
-						<!--<label class="tmDatepicker">-->
-							<!--<input type="text" name="Check-in" placeHolder='10/05/2014' data-constraints="@NotEmpty @Required @Date">-->
-						<!--</label>-->
-						<!--<div class="clear"></div>-->
-						<!--<strong>Check-out</strong>-->
-						<!--<label class="tmDatepicker">-->
-							<!--<input type="text" name="Check-out" placeHolder='20/05/2014' data-constraints="@NotEmpty @Required @Date">-->
-						<!--</label>-->
-						<!--<div class="clear"></div>-->
-						<!--<div class="tmRadio">-->
-							<!--<p>Comfort</p>-->
-							<!--<input name="Comfort" type="radio" id="tmRadio0" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' checked/>-->
-							<!--<span>Cheap</span>-->
-							<!--<input name="Comfort" type="radio" id="tmRadio1" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />-->
-							<!--<span>Standart</span>-->
-							<!--<input name="Comfort" type="radio" id="tmRadio2" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />-->
-							<!--<span>Lux</span>-->
-						<!--</div>-->
-						<!--<div class="clear"></div>-->
-						<!--<div class="fl1 fl2">-->
-							<!--<em>Adults</em>-->
-							<!--<select name="Adults" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">-->
-								<!--<option>1</option>-->
-								<!--<option>1</option>-->
-								<!--<option>2</option>-->
-								<!--<option>3</option>-->
-							<!--</select>-->
-							<!--<div class="clear"></div>-->
-							<!--<em>Rooms</em>-->
-							<!--<select name="Rooms" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">-->
-								<!--<option>1</option>-->
-								<!--<option>1</option>-->
-								<!--<option>2</option>-->
-								<!--<option>3</option>-->
-							<!--</select>-->
-						<!--</div>-->
-						<!--<div class="fl1 fl2">-->
-							<!--<em>Children</em>-->
-							<!--<select name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">-->
-								<!--<option>0</option>-->
-								<!--<option>0</option>-->
-								<!--<option>1</option>-->
-								<!--<option>2</option>-->
-							<!--</select>-->
-						<!--</div>-->
-						<!--<div class="clear"></div>-->
-						<!--<div class="tmTextarea">-->
-							<!--<textarea name="Message" placeHolder="Message" data-constraints='@NotEmpty @Required @Length(min=20,max=999999)'></textarea>-->
-						<!--</div>-->
-						<!--<a href="#" class="btn" data-type="submit">Submit</a>-->
-					<!--</form>-->
-				<!--</div>-->
+
+    <section class="BookingForm">
+      <div class="container">
+        <div class="BookingForm__wrap">
+          <div class="BookingForm__wrap__form-block">
+            <form class="decor">
+              <div class="form-left-decoration"></div>
+              <div class="form-right-decoration"></div>
+              <div class="circle"></div>
+              <div class="form-inner">
+                <h3>Написать нам</h3>
+                <div class="form-row">
+                  <input type="text" placeholder="Имя">
+                  <input type="text" placeholder="Фамилия">
+                </div>
+
+                <input type="email" placeholder="Ваш Email">
+                <input type="text" name="Country" placeHolder="Стана куда вы хотите полететь" >
+                <lable>Выбрать даты вылета</lable>
+                <div class="form-row">
+                  <input type="date" name="Check-in" placeHolder='10/05/2014'>
+                  <input type="date" name="Check-out" placeHolder='20/05/2014'>
+                </div>
+                <lable>Уровень комфорта</lable>
+                <div class="form-row level-comfort">
+                  <lable><input name="Comfort" type="radio" id="tmRadio0" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' checked/>Стандарт</lable>
+                  <lable><input name="Comfort" type="radio" id="tmRadio1" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />Комфорт</lable>
+                  <lable><input name="Comfort" type="radio" id="tmRadio2" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />Люкс</lable>
+                </div>
+                <textarea placeholder="Сообщение..." rows="4"></textarea>
+                <input type="submit" value="Отправить">
+              </div>
+            </form>
+          </div>
+          <div class="BookingForm__wrap__welcome-block">
+            <div class="grid_5 prefix_1">
+              <h3>Welcome</h3>
+              <img src="images/page1_img1.jpg" alt="" class="img_inner fleft">
+              <div class="extra_wrapper">
+                <p>Lorem ipsum dolor sit ere amet, consectetur ipiscin.</p>
+                In mollis erat mattis neque facilisis, sit ametiol
+              </div>
+              <div class="clear cl1"></div>
+              <p>Find the detailed description of this <span class="col1"><a href="http://blog.templatemonster.com/free-website-templates/" rel="dofollow">freebie</a></span> at TemplateMonster blog.</p>
+              <p><span class="col1"><a href="http://www.templatemonster.com/category/travel-website-templates/" rel="nofollow">Travel Website Templates</a></span> category offers you a variety of designs that are perfect for travel sphere of business.</p>
+              Proin pharetra luctus diam, a scelerisque eros convallis
+              <h4>Clients’ Quotes</h4>
+              <blockquote class="bq1">
+                <img src="images/page1_img2.jpg" alt="" class="img_inner noresize fleft">
+                <div class="extra_wrapper">
+                  <p>Duis massa elit, auctor non pellentesque vel, aliquet sit amet erat. Nullam eget dignissim nisi, aliquam feugiat nibh. </p>
+                  <div class="alright">
+                    <div class="col1">Miranda Brown</div>
+                    <a href="#" class="btn">More</a>
+                  </div>
+                </div>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="partners">
+      <div class="contaiber">
+        <div class="section__wrap">
+          <div class="slider-logo">
+            <a href="#"><img src="images/joinup-logo.jpg" alt=""></a>
+            <a href="#"><img src="images/TEZ_TOUR_logo.png" alt=""></a>
+            <a href="#"><img src="images/tui-logo.png" alt=""></a>
+            <a href="#"><img src="images/tpg_logo.png" alt=""></a>
+            <a href="#"><img src="images/Coraltrave-logo.jpg" alt=""></a>
+            <a href="#"><img src="images/LogoPegas.jpg" alt=""></a>
 
 
-			<form class="decor">
-				<div class="form-left-decoration"></div>
-				<div class="form-right-decoration"></div>
-				<div class="circle"></div>
-				<div class="form-inner">
-					<h3>Написать нам</h3>
-					<input type="text" placeholder="Username">
-					<input type="email" placeholder="Email">
-					<input name="Country" placeHolder="Country:" type="text">
-					<input name="Hotel" placeHolder="Hotel:" type="text">
-					<lable>Выбрать даты вылета</lable>
-					<input type="date" name="Check-in" placeHolder='10/05/2014'>
-					<input type="date" name="Check-out" placeHolder='20/05/2014'>
-					<lable>Уровень комфорта</lable>
-					<lable><input name="Comfort" type="radio" id="tmRadio0" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' checked/>Стандарт</lable>
-					<lable><input name="Comfort" type="radio" id="tmRadio1" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />Комфорт</lable>
-					<lable><input name="Comfort" type="radio" id="tmRadio2" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />Люкс</lable>
-					<textarea placeholder="Сообщение..." rows="4"></textarea>
-					<input type="submit" value="Отправить">
-				</div>
-			</form>
+          </div>
+        </div>
+      </div>
+    </section>
 
-
-				<div class="grid_5 prefix_1">
-					<h3>Welcome</h3>
-					<img src="images/page1_img1.jpg" alt="" class="img_inner fleft">
-					<div class="extra_wrapper">
-						<p>Lorem ipsum dolor sit ere amet, consectetur ipiscin.</p>
-						In mollis erat mattis neque facilisis, sit ametiol
-					</div>
-					<div class="clear cl1"></div>
-					<p>Find the detailed description of this <span class="col1"><a href="http://blog.templatemonster.com/free-website-templates/" rel="dofollow">freebie</a></span> at TemplateMonster blog.</p>
-					<p><span class="col1"><a href="http://www.templatemonster.com/category/travel-website-templates/" rel="nofollow">Travel Website Templates</a></span> category offers you a variety of designs that are perfect for travel sphere of business.</p>
-					Proin pharetra luctus diam, a scelerisque eros convallis
-					<h4>Clients’ Quotes</h4>
-					<blockquote class="bq1">
-						<img src="images/page1_img2.jpg" alt="" class="img_inner noresize fleft">
-						<div class="extra_wrapper">
-							<p>Duis massa elit, auctor non pellentesque vel, aliquet sit amet erat. Nullam eget dignissim nisi, aliquam feugiat nibh. </p>
-							<div class="alright">
-								<div class="col1">Miranda Brown</div>
-								<a href="#" class="btn">More</a>
-							</div>
-						</div>
-					</blockquote>
-				</div>
 				<div class="grid_12">
 					<h3 class="head1">Latest News</h3>
 				</div>
@@ -384,16 +357,16 @@
 			</div>
 		</footer>
 		<script>
-			$(function (){
-				$('#bookingForm').bookingForm({
-					ownerEmail: '#'
-				});
-			})
-			$(function() {
-				$('#bookingForm input, #bookingForm textarea').placeholder();
-			});
-		</script>
-        <script type="text/javascript">
+        $(function (){
+    $('#bookingForm').bookingForm({
+      ownerEmail: '#'
+    });
+  })
+  $(function() {
+    $('#bookingForm input, #bookingForm textarea').placeholder();
+  });
+</script>
+<script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-7078796-5']);
@@ -404,7 +377,7 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
-</script>
-	</body><!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P9FT69"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P9FT69');</script><!-- End Google Tag Manager -->
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+	</body>
 </html>

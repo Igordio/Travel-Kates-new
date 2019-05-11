@@ -1,12 +1,12 @@
 
 .menu_block  {
-	margin-right: 4px;
+	margin: 0 auto;
 	z-index: 999;
 	position: relative;
 	width: 100%;
-	max-width: 630px;
+	max-width: 900px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 
@@ -33,9 +33,9 @@ nav{ position:relative;padding: 0px 0 0 0;}
 .sf-menu>li {
 	display: block;
 	position: relative;
-	font-size: 19px;
+	font-size: 22px;
 	line-height: 20px;
-
+  width: 20%;
 }
 
 .sf-menu>li>a{
@@ -43,6 +43,7 @@ nav{ position:relative;padding: 0px 0 0 0;}
 	color: #433d45;
 	display: block;
 	font-weight: 500;
+  font-family: 'Pacifico', cursive;
 }
 
 .sf-menu>li.sfHover>a, .sf-menu>li.current>a, .sf-menu>li>a:hover {
