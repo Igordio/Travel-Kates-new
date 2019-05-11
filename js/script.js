@@ -80,5 +80,13 @@ $(document).ready(function(){
     arrows: true,
     prevArrow: ('<i class="fas fa-chevron-left"></i>'),
     nextArrow: ('<i class="fas fa-chevron-right"></i>')
+  });
 });
+$(window).scroll(function() {
+  var height = $(window).scrollTop();
+  if(height > 100){
+    $('.section__wrap__nav-top').addClass('nav-top-hide');
+  } else{
+    $('.section__wrap__nav-top').removeClass('nav-top-hide');
+  }
 });

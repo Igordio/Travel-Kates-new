@@ -282,11 +282,20 @@ a.btn:hover {
   justify-content: space-between;
   width: 100%;
   align-items: center;
+  transition: .5s ease-out;
   border-bottom: 1px solid #dedbdb;
-  padding-bottom: 10px;
+  height: 120px;
+}
+.nav-top-hide{
+  opacity: 0;
+  height: 0;
+}
+.nav-top-hide + .section__wrap__nav-bottom{
+  margin-top: -10px;
 }
 .section__wrap__nav-bottom{
   padding-top: 10px;
+
 }
 .header__contact{
   width: 250px;
@@ -445,30 +454,10 @@ i.fas.fa-chevron-left.slick-arrow {
   font-size: 22px;
 }
 
-/*button.slick-next.slick-arrow {*/
-  /*right: -60px;*/
-/*}*/
-/*button.slick-prev.slick-arrow {*/
-  /*left: -80px;*/
-/*}*/
-/*.fa-chevron-right .slick-arrow{*/
-  /*right: -60px;*/
-/*}*/
-/*.fa-chevron-right:before {*/
-  /*content: "\f054";*/
-  /*top: 50%;*/
-  /*position: absolute;*/
-  /*transform: translate(-50%, -50%);*/
-  /*left: 50%;*/
-/*}*/
-/*.fa-chevron-left:before {*/
-  /*content: "\f054";*/
-  /*top: 50%;*/
-  /*position: absolute;*/
-  /*transform: translate(-50%, -50%);*/
-  /*left: 50%;*/
-/*}*/
-
+.photoClients {
+  padding: 80px 0;
+  background-color: #f0f8ff;
+}
 
 .cl1 {
     height: 25px;
