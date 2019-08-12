@@ -92,6 +92,25 @@ $(document).ready(function(){
     nextArrow: ('<i class="fas fa-chevron-right"></i>')
   });
 
+  $('.single-item').slick({
+    arrows: false,
+    autoplay: true,
+    dots: false,
+    centerMode: false,
+    slidesToShow: 1,
+    lazyLoad: 'progressive',
+    speed: 900
+  });
+  // next button
+  $('.next-btn').click(function() {
+    $('.single-item').slick('slickNext');
+  });
+
+// previous button
+  $('.prev-btn').click(function() {
+    $('.single-item').slick('slickPrev');
+  });
+
 });
 $(window).scroll(function() {
   var height = $(window).scrollTop();
@@ -134,55 +153,4 @@ $(window).scroll(function() {
 //   });
 //   $().UItoTop({ easingType: 'easeOutQuart' });
 // });
-$(document).ready(function() {
-  var slider = $(".main-slider");
-  slider.attr("dir", "rtl");
 
-  if (slider.length > 0) {
-    slider.slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      fade: false,
-      swipe: false,
-      rtl: true,
-      speed: 2000,
-      autoplay: true,
-      autoplaySpeed: 5000,
-      pauseOnHover: false,
-      adaptiveHeight: true,
-      responsive: [
-        {
-          breakpoint: 992,
-          settings: {
-            arrows: true,
-            prevArrow: '<div class="slick-prev"></div>',
-            nextArrow: '<div class="slick-next"></div>'
-          }
-        }
-      ]
-    });
-  }
-
-  var navigation = $(".navigation-slider");
-
-  if (navigation.length > 0) {
-    navigation.slick({
-      asNavFor: slider,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      dots: false,
-      centerMode: false,
-      focusOnSelect: false,
-      arrows: true,
-      vertical: true,
-      prevArrow: '<div class="slick-prev"></div>',
-      nextArrow: '<div class="slick-next"></div>',
-      swipe: false,
-      speed: 2000,
-      autoplay: true,
-      autoplaySpeed: 5000,
-      pauseOnHover: false
-    });
-  }
-}
