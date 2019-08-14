@@ -82,8 +82,8 @@ img {
 h2 {
     font-size: 45px;
     line-height: 30px;
-    color: #583388;
-    font-weight: 600;
+    color: #ffb529;
+    font-weight: 400;
     margin-bottom: 20px;
     font-family: 'Pacifico', cursive;
 }
@@ -266,7 +266,6 @@ a.btn:hover {
 
 .section__wrap{
     align-items: center;
-    padding: 15px 0;
 }
 .header__logo img{
     max-width: 150px;
@@ -551,40 +550,69 @@ img.ourService__wrap__item--icon {
 
 /**Footer**/
 
-.footer {
+footer {
 	display: block;
-    padding: 0px 0 60px;
-    color: #a3afba;
-    font-family: 'Montserrat', sans-serif;
+  padding: 60px 0 60px;
+  color: #a3afba;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ff7a7a;
+  position: relative;
+}
+footer:before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  -webkit-box-shadow: inset 0px 0px 21px -1px #B75858;
+  box-shadow: inset 0px 0px 21px -1px #B75858;
 
 }
-
+.footer__section__wrap{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.sf-menu.footer{
+  flex-direction: column;
+}
+.sf-menu.footer li{
+  width: 100%;
+  line-height: 40px;
+}
+.sf-menu.footer li a{
+  color: #ffffff;
+  font-weight: 200;
+}
 .socials {
     padding-top: 33px;
 }
-
-.socials a {
-    background: url(../images/time_bg.png) 0 center repeat-x;
-    display: block;
-    font-size: 20px;
-    width: 40px;
-    height: 37px;
-    color: #e5e5e5;
-    text-align: center;
-    line-height: 37px;
-    border-radius: 7px;
+.footer__section__wrap .header__logo img{
+  width: 100%;
+  max-width: 250px;
 }
-
-.socials a:hover {
-    background-position: 0 -100px;
-    background-color: #F0F3F5;
-    color: #d84a45;
+.footer__contact{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 270px;
+  max-width: 100%;
+  color: #ffffff;
+  text-align: right;
 }
-
-.socials a +a {
-    margin-left: 10px;
+.footer__contact--socials{
+  width: 200px;
+  max-width: 100%;
+  justify-content: space-between;
+  display: flex;
+  margin-top: 50px;
 }
-
+.footer__contact--socials a i{
+  color: #ffffff;
+}
+.footer__contact--socials a i:hover{
+  color: #00e0de;
+}
 
 .copy {
     padding-top: 44px;
@@ -624,6 +652,17 @@ img.ourService__wrap__item--icon {
   text-align: center;
   margin-bottom: 80px;
 }
+.pageHeader__wrap h2{
+  display: table;
+  margin: 0 auto 10px;
+  font-weight: 400;
+  font-size: 80px;
+  background: linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 150px;
+}
+
 .pageHeader__wrap p{
   width: 100%;
   max-width: 700px;
@@ -788,27 +827,30 @@ div.box--1 {
 /*======Galery======*/
 
 ul#albumfotos{
-  width:700px;
+  width:100%;
   margin:0 auto;
-  padding:50px;
+  padding: 120px;
   overflow:hidden;
   list-style:none;
 }
 
 ul#albumfotos li{
   float:left;
-  width:200px;
-  height:200px;
-  margin:10px;
+  width:280px;
+  height:280px;
+  margin:20px;
   border:5px solid #ffffff;
   background-color: #ffffff;
   box-shadow:1px 1px 3px rgba(0,0,0,.4);
   -webkit-transition:all .4s ease-in;
+  border-radius: 20px;
+  position: relative;
+
+
 }
 ul#albumfotos li:hover{
   -webkit-transform: scale(1.5);
-
-
+  z-index: 100;
   }
 
 ul#albumfotos li span{
@@ -816,9 +858,12 @@ ul#albumfotos li span{
   color:#ffffff;
   text-shadow:1px 1px 1px #000000;
   background-color: rgba(0,0,0,.3);
-  font-size: 9pt;
-  line-height:370px;
-  padding:5px;
+  font-size: 15px;
+  position: absolute;
+  padding: 13px;
+  bottom: -5px;
+  border-radius: 0 0 0 20px;
+  left: -5px;
 }
 
 ul#albumfotos li:hover span{
@@ -831,6 +876,7 @@ ul#albumfotos li#foto01{
   background-position:50% 50%;
   background-size:400px 400px;
   background-color: #ffffff;
+
 }
 ul#albumfotos li#foto01:hover{
   background-position:0px 0px;
