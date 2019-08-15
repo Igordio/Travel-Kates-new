@@ -67,14 +67,14 @@
                 <ul class="sf-menu">
                   <li class="current"><a href="index.html">Главная</a></li>
                   <li><a href="hottours.html">Горящие туры</a></li>
-                  <li>
-                    <a href="shop.html">Travel SHOP</a>
-                      <i class="fas fa-shopping-basket">
-                  </i>
-                  </li>
                   <li><a href="offers.html">Предложения</a></li>
                   <li><a href="offers.html">Услуги</a></li>
                   <li><a href="contact.html">Контакты</a></li>
+                  <li class="shop__menu__item">
+                    <a href="shop.html">Travel SHOP</a>
+                    <i class="fas fa-shopping-basket">
+                    </i>
+                  </li>
                 </ul>
               </nav>
             </div>
@@ -231,12 +231,6 @@
                   <input type="date" name="Check-in" placeHolder='10/05/2014'>
                   <input type="date" name="Check-out" placeHolder='20/05/2014'>
                 </div>
-                <lable>Уровень комфорта</lable>
-                <div class="form-row level-comfort">
-                  <lable><input name="Comfort" type="radio" id="tmRadio0" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' checked/>Стандарт</lable>
-                  <lable><input name="Comfort" type="radio" id="tmRadio1" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />Комфорт</lable>
-                  <lable><input name="Comfort" type="radio" id="tmRadio2" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />Люкс</lable>
-                </div>
                 <textarea placeholder="Сообщение..." rows="4"></textarea>
                 <input type="submit" value="Отправить">
               </div>
@@ -353,31 +347,49 @@
     </section>
 
     <section class="photoClients">
-      <!--<div class="container">-->
-        <div class="section__wrap">
-          <h4>Фото наших туристов</h4>
-          <div class="photoClients__galery">
-            <div class="container">
-            <div id="photogalery">
-              <ul id="albumfotos">
-                <li id="foto01"><span>Gravação</span></li>
-                <li id="foto02"><span>Mixagem e masteriozação</span></li>
-                <li id="foto03"><span>Assessoria</span></li>
-                <li id="foto04"><span>Produção musical</span></li>
-                <li id="foto05"><span>Aluguel</span></li>
-                <li id="foto06"><span>Stops de radio e jingles</span></li>
-              </ul>
-            </div>
-          </div>
+      <div class="section__wrap">
+        <h4>Фото наших туристов</h4>
+        <div class="photoClients__galery">
+          <div class="container">
+          <div id="photogalery">
+            <ul id="albumfotos">
+              <li id="foto01"><span>Gravação</span></li>
+              <li id="foto02"><span>Mixagem e masteriozação</span></li>
+              <li id="foto03"><span>Assessoria</span></li>
+              <li id="foto04"><span>Produção musical</span></li>
+              <li id="foto05"><span>Aluguel</span></li>
+              <li id="foto06"><span>Stops de radio e jingles</span></li>
+            </ul>
           </div>
         </div>
+        </div>
+      </div>
     </section>
 
     <section class="ourTeam">
       <div class="container">
         <div class="section__wrap">
           <h4>Наша команда</h4>
-
+          <div class="section__wrap__ourTeam">
+            <div class="section__wrap__ourTeam--persone">
+              <div class="persone__image">
+                <img src="images/people_1.jpg" alt="">
+              </div>
+              <div class="persone__text">
+                <p class="persone__text--name">Имя Фамилия</p>
+                <p class="persone__text--office">должность</p>
+              </div>
+            </div>
+            <div class="section__wrap__ourTeam--persone">
+              <div class="persone__image">
+                <img src="images/people_1.jpg" alt="">
+              </div>
+              <div class="persone__text">
+                <p class="persone__text--name">Имя Фамилия</p>
+                <p class="persone__text--office">должность</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

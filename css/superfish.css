@@ -26,6 +26,7 @@ nav>.sf-menu {
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
+  padding: 10px 0 15px;
 }
 nav{ position:relative;padding: 0px 0 0 0;}
 .sf-menu ul {position:absolute;top:-999px; display:none;/* left offset of submenus need to match (see below) */}
@@ -51,7 +52,16 @@ nav{ position:relative;padding: 0px 0 0 0;}
 	font-weight: 500;
 	font-size: 19px;
 }
-
+li.shop__menu__item {
+  display: flex;
+  justify-content: space-around;
+}
+li.shop__menu__item i{
+  font-size: 15px;
+  color: #f59f1b;
+  align-items: center;
+  display: flex;
+}
 
 .sf-menu>li>a.sf-with-ul:after {
 	position: absolute;
