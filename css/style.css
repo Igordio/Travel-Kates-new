@@ -114,13 +114,11 @@ h3.head1 {
 }
 
 h5 {
-    font-size: 20px;
-    padding-top: 115px;
-    line-height: 27px;
-    color: #002747;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-    margin-bottom: 29px;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 45px;
+  color: #224484;
+  font-family: 'Pacifico';
 }
 
 /****Lists****/
@@ -266,6 +264,10 @@ a.btn:hover {
 
 .section__wrap{
     align-items: center;
+}
+.location__description, .location__map{
+  width: 50%;
+  max-width: 100%;
 }
 .header__logo img{
     max-width: 150px;
@@ -520,6 +522,9 @@ img.ourService__wrap__item--icon {
   background-color: rgba(121, 85, 72, 0.57);
   top: 0;
 }
+.photoClients h4{
+  color: #ffffff;
+}
 
 /**ourTeam**/
 
@@ -565,34 +570,63 @@ img.ourService__wrap__item--icon {
 /**location**/
 
 section.location {
-  background: #b3f5fd;
-  padding-top: 50px;
+  height: 600px;
+  position: relative;
+}
+
+.section__wrap--locations {
+  display: flex;
 }
 .location iframe{
   width: 100%;
 }
 
-.location__map__block {
-  max-width: 100%;
-  padding: 50px;
-  text-align: center;
-  background-color: #5ce8f9;
-  -webkit-box-shadow: 0px 6px 15px -2px rgba(69, 176, 227, 1);
-  -moz-box-shadow: 0px 6px 15px -2px rgba(69, 176, 227, 1);
-  box-shadow: 0px 6px 15px -2px rgba(69, 176, 227, 1);
+/*.location__map__block {*/
+  /*max-width: 100%;*/
+  /*padding: 50px;*/
+  /*text-align: center;*/
+  /*z-index: 10;*/
+  /*position: relative;*/
+/*}*/
+.location__map__block--description{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #224484;
+  width: 285px;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.location__description{
+  background: #BBF5FE;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   z-index: 10;
   position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
-.location__map__block--title, .location__map__block--description{
-  text-transform: uppercase;
-  font-size: 30px;
-  font-weight: 500;
-  color: #555454;
+.location__map__block {
+  width: 400px;
+  max-width: 100%;
 }
-.location__map__block--description{
-  text-transform: none;
+.location__map__block h5{
+  margin-bottom: 46px;
+}
+i.fas.fa-map-marker-alt {
+  position: absolute;
+  left: -45px;
+  top: -3px;
+  background: #fff;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding: 8px 10px;
+  color: #4cdaf1;
 
 }
+
 /**Map**/
 
 
@@ -623,6 +657,7 @@ footer:before{
   justify-content: space-between;
   align-items: center;
   padding: 0 15px 0 15px;
+  flex-wrap: wrap;
 }
 .sf-menu.footer{
   flex-direction: column;
@@ -723,6 +758,10 @@ footer:before{
   font-size: 19px;
   font-style: italic;
   margin: 0 auto;
+}
+
+.shopBox__wrap{
+
 }
 
     /*ShopSlick*/
