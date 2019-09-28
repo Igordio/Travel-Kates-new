@@ -53,33 +53,48 @@ $(function(){
   }
  }
 });
-// var ua=navigator.userAgent.toLocaleLowerCase(),
-//  regV = /ipod|ipad|iphone/gi,
-//  result = ua.match(regV),
-//  userScale="";
-// if(!result){
-//  userScale=",user-scalable=0"
-// }
-// document.write('<meta name="viewport" content="width=device-width,initial-scale=1.0'+userScale+'">')
-//
-// var currentYear = (new Date).getFullYear();
-//   $(document).ready(function() {
-//   $("#copyright-year").text( (new Date).getFullYear() );
-//   });
-//
-//   $(function(){
-//   $('.sf-menu').superfish({autoArrows: true})
-// });
+
 
 $(document).ready(function(){
   $('.slider-logo').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
     arrows: true,
     prevArrow: ('<i class="fas fa-chevron-left"></i>'),
-    nextArrow: ('<i class="fas fa-chevron-right"></i>')
+    nextArrow: ('<i class="fas fa-chevron-right"></i>'),
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 737,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 415,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+
+    ]
   });
 
   $('#camera_wrap').slick({
@@ -121,162 +136,7 @@ $(window).scroll(function() {
   }
 });
 
-// $(document).ready(function(){
-//   var number = Math.floor((Math.random() * 5) + 0);
-//   var number2 = Math.floor((Math.random() * 0) + -5);
-//   $(".polaroid:nth-of-type(n+1)").css("transform", "rotate(" + number + "deg)");
-//   $(".polaroid:nth-of-type(n+2)").css("transform", "rotate(" + number2 + "deg)");
-//
-// });
 
-// $(document).ready(function(){
-//   $('#camera_wrap').camera({
-//     loader: true,
-//     pagination: true,
-//     minHeight: '444',
-//     thumbnails: false,
-//     height: '45%',
-//     caption: true,
-//     navigation: true,
-//     fx: 'mosaic'
-//   });
-//   /*carousel*/
-//   var owl=$("#owl");
-//   owl.owlCarousel({
-//     items : 2, //10 items above 1000px browser width
-//     itemsDesktop : [995,2], //5 items between 1000px and 901px
-//     itemsDesktopSmall : [767, 2], // betweem 900px and 601px
-//     itemsTablet: [700, 2], //2 items between 600 and 0
-//     itemsMobile : [479, 1], // itemsMobile disabled - inherit from itemsTablet option
-//     navigation : true,
-//     pagination : true
-//   });
-//   $().UItoTop({ easingType: 'easeOutQuart' });
-// });
-
-// $(document).ready(function() {
-//
-//     var $slider = $(".slider"),
-//         $slideBGs = $(".slide__bg"),
-//         diff = 0,
-//         curSlide = 0,
-//         numOfSlides = $(".slide").length-1,
-//         animating = false,
-//         animTime = 500,
-//         autoSlideTimeout,
-//         autoSlideDelay = 6000,
-//         $pagination = $(".slider-pagi");
-//
-//     function createBullets() {
-//         for (var i = 0; i < numOfSlides+1; i++) {
-//             var $li = $("<li class='slider-pagi__elem'></li>");
-//             $li.addClass("slider-pagi__elem-"+i).data("page", i);
-//             if (!i) $li.addClass("active");
-//             $pagination.append($li);
-//         }
-//     };
-//
-//     createBullets();
-//
-//     function manageControls() {
-//         $(".slider-control").removeClass("inactive");
-//         if (!curSlide) $(".slider-control.left").addClass("inactive");
-//         if (curSlide === numOfSlides) $(".slider-control.right").addClass("inactive");
-//     };
-//
-//     function autoSlide() {
-//         autoSlideTimeout = setTimeout(function() {
-//             curSlide++;
-//             if (curSlide > numOfSlides) curSlide = 0;
-//             changeSlides();
-//         }, autoSlideDelay);
-//     };
-//
-//     autoSlide();
-//
-//     function changeSlides(instant) {
-//         if (!instant) {
-//             animating = true;
-//             manageControls();
-//             $slider.addClass("animating");
-//             $slider.css("top");
-//             $(".slide").removeClass("active");
-//             $(".slide-"+curSlide).addClass("active");
-//             setTimeout(function() {
-//                 $slider.removeClass("animating");
-//                 animating = false;
-//             }, animTime);
-//         }
-//         window.clearTimeout(autoSlideTimeout);
-//         $(".slider-pagi__elem").removeClass("active");
-//         $(".slider-pagi__elem-"+curSlide).addClass("active");
-//         $slider.css("transform", "translate3d("+ -curSlide*100 +"%,0,0)");
-//         $slideBGs.css("transform", "translate3d("+ curSlide*50 +"%,0,0)");
-//         diff = 0;
-//         autoSlide();
-//     }
-//
-//     function navigateLeft() {
-//         if (animating) return;
-//         if (curSlide > 0) curSlide--;
-//         changeSlides();
-//     }
-//
-//     function navigateRight() {
-//         if (animating) return;
-//         if (curSlide < numOfSlides) curSlide++;
-//         changeSlides();
-//     }
-//
-//     $(document).on("mousedown touchstart", ".slider", function(e) {
-//         if (animating) return;
-//         window.clearTimeout(autoSlideTimeout);
-//         var startX = e.pageX || e.originalEvent.touches[0].pageX,
-//             winW = $(window).width();
-//         diff = 0;
-//
-//         $(document).on("mousemove touchmove", function(e) {
-//             var x = e.pageX || e.originalEvent.touches[0].pageX;
-//             diff = (startX - x) / winW * 70;
-//             if ((!curSlide && diff < 0) || (curSlide === numOfSlides && diff > 0)) diff /= 2;
-//             $slider.css("transform", "translate3d("+ (-curSlide*100 - diff) +"%,0,0)");
-//             $slideBGs.css("transform", "translate3d("+ (curSlide*50 + diff/2) +"%,0,0)");
-//         });
-//     });
-//
-//     $(document).on("mouseup touchend", function(e) {
-//         $(document).off("mousemove touchmove");
-//         if (animating) return;
-//         if (!diff) {
-//             changeSlides(true);
-//             return;
-//         }
-//         if (diff > -8 && diff < 8) {
-//             changeSlides();
-//             return;
-//         }
-//         if (diff <= -8) {
-//             navigateLeft();
-//         }
-//         if (diff >= 8) {
-//             navigateRight();
-//         }
-//     });
-//
-//     $(document).on("click", ".slider-control", function() {
-//         if ($(this).hasClass("left")) {
-//             navigateLeft();
-//         } else {
-//             navigateRight();
-//         }
-//     });
-//
-//     $(document).on("click", ".slider-pagi__elem", function() {
-//         curSlide = $(this).data("page");
-//         changeSlides();
-//     });
-//
-// });
 
 $(document).ready(function() {
 
