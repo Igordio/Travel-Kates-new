@@ -253,9 +253,7 @@ a.btn:hover {
 .center {
 	text-align: center;
 }
-.wrapper, .extra_wrapper {
-	overflow: hidden;
-}
+
 .main {
     height: auto;
 }
@@ -264,6 +262,8 @@ a.btn:hover {
 
 .section__wrap{
     align-items: center;
+  position: relative;
+  z-index: 4;
 }
 .location__description, .location__map{
   width: 50%;
@@ -359,11 +359,9 @@ header h1 a img {
   height: 100%;
   z-index: 10;
   background-color: rgba(0, 0, 0, .45);
-  top: -45px;
   border-radius: 15px;
 }
 .banner{
-  top: -45px;
   position: relative;
 }
 .banner img{
@@ -385,55 +383,90 @@ header h1 a img {
 
 
 .banner .label .title {
-    font-size: 30px;
-    margin-bottom: 14px;
-    text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
 }
 
 .banner .label .price span {
-    display: block;
-    font-size: 24px;
-    padding-top: 3px;
+  display: block;
+  font-size: 24px;
+  padding-top: 3px;
 }
 
 .banner a {
-    font-size: 15px;
-    line-height: 20px;
-    color: #0093ea;
-    text-transform: uppercase;
-    display: inline-block;
-    background-color: #e5e5e5;
-    padding: 5px 18px 4px;
-    margin-top: 40px;
-    border-radius: 13px;
-    font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #0093ea;
+  display: inline-block;
+  font-family: 'Pacifico', cursive;
+  background-color: #e5e5e5;
+  padding: 15px 0;
+  margin-top: 40px;
+  width: 100%;
+  font-weight: 300;
+  opacity: 0;
+  transition: all .5s ease;
+  text-transform: none;
 }
-
+.onePost:hover .banner a{
+  opacity: 1;
+}
 .banner a:hover {
-    background-color: #c73430;
-    color: #fff;
+  background-color: #c73430;
+  color: #fff;
+
 }
 
 /**  aboutCompany  **/
 
 .aboutCompany{
-  padding-top: 90px;
-  padding-bottom: 120px;
+  padding: 90px 150px 120px;
+
 }
 .section__wrap-aboutCompany{
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.aboutCompany__image, .aboutCompany__description{
-  width: 50%;
+/*.aboutCompany__image, .aboutCompany__description{*/
+  /*width: 50%;*/
+/*}*/
+.aboutCompany__image img {
+  max-width: 590px;
 }
-
+.aboutCompany__description{
+  text-align: center;
+  padding-left: 50px;
+}
+.aboutCompany__description h1{
+  font-family: 'Pacifico';
+  font-size: 60px;
+  line-height: 70px;
+  margin-bottom: 60px;
+  color: #99226c;
+}
+.aboutCompany__description p{
+  font-size: 18px;
+  line-height: 27px;
+}
 /**Partners**/
 
 .partners{
   padding: 70px;
 }
+.partners .section__wrap h4{
+  position: relative;
+}
+.partners .section__wrap h4:before{
+  position: absolute;
+  content: 'Туроператоры';
+  font-size: 90px;
+  color: rgba(0, 0, 0, .05);
+  right: 50%;
+  transform: translate(45%, -29px);
+}
+
 h4{
   text-align: center;
   margin-bottom: 50px;
@@ -498,16 +531,18 @@ i.fas.fa-chevron-left.slick-arrow {
 }
 .ourService__wrap__item{
   text-align: center;
-  width: 350px;
+  width: 380px;
   max-width: 100%;
   margin-bottom: 40px;
-  padding: 15px;
+  padding: 20px;
+  transition: all .5s ease-in-out;
 }
 .ourService__wrap__item:hover {
   -webkit-box-shadow: 4px 5px 10px 0px rgba(132,134,135,1);
   -moz-box-shadow: 4px 5px 10px 0px rgba(132,134,135,1);
   box-shadow: 4px 5px 10px 0px rgba(132,134,135,1);
   cursor: pointer;
+  background-color: #ffffff6b;
 }
 
 img.ourService__wrap__item--icon {
@@ -1333,6 +1368,15 @@ footer:before{
 @media (max-width: 1024px){
   .slider-logo .slick-slide img {
     width: 150px;
+  }
+  .ourService__wrap{
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 768px){
+  .ourService__wrap__item{
+    width: 350px;
   }
 }
 

@@ -1,3 +1,19 @@
+.slider_wrapper{
+  position: relative;
+}
+
+.slider_wrapper:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100px;
+  background-image: url(../images/edge.png);
+  background-repeat: no-repeat;
+  z-index: 3;
+  background-size: cover;
+  bottom: -8px;
+}
+
 #camera_wrap .slick-slide{
   position: relative;
 }
