@@ -421,13 +421,25 @@ header h1 a img {
 /**  aboutCompany  **/
 
 .aboutCompany{
-  padding: 90px 150px 120px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
+.aboutCompany:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    opacity: .75;
 }
 .section__wrap-aboutCompany{
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 130px 0px 160px;
 }
 /*.aboutCompany__image, .aboutCompany__description{*/
   /*width: 50%;*/
@@ -437,7 +449,6 @@ header h1 a img {
 }
 .aboutCompany__description{
   text-align: center;
-  padding-left: 50px;
 }
 .aboutCompany__description h1{
   font-family: 'Pacifico';
@@ -445,11 +456,30 @@ header h1 a img {
   line-height: 70px;
   margin-bottom: 60px;
   color: #99226c;
+    font-weight: 400;
 }
 .aboutCompany__description p{
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 20px;
+  line-height: 38px;
+  color: #000000;
 }
+    /* Cursore setings */
+.typing {
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.typed-cursor{
+  opacity: 1;
+  font-weight: 200;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
 /**Partners**/
 
 .partners{

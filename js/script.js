@@ -248,4 +248,15 @@ $(document).ready(function() {
 
     loadGallery();
 
-})
+    $(".typing").typed({
+        strings: [" к Нам", " в туристическое агентство", " Travel Kate's Agency."],
+        typeSpeed: 70,
+        backDelay: 1500,
+        startDelay: 2500,
+        loop: true,
+        loopCount: 2,
+        contentType: 'html',
+    });
+
+});
+
