@@ -423,7 +423,7 @@ header h1 a img {
   width: 100vw;
   position: absolute;
   top: -140px;
-  right: -35px;
+  right: -15px;
 }
 
 /**Content**/
@@ -1493,7 +1493,7 @@ footer:before{
     margin-left: 0;
   }
   .section__wrap__nav-bottom{
-    padding: 20px;
+    padding: 20px 0;
   }
   .sf-menu>li{
     width: 100%;
@@ -1774,6 +1774,15 @@ header h1 a {
 
 }
 @media (max-width: 414px) {
+  h4:before{
+    display: none;
+  }
+  .header__logo{
+    width: 50%;
+  }
+  .header__contact{
+    width: 100%;
+  }
   .persone__image img{
     width: 100%;
     height: auto;
