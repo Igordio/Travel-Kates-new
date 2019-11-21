@@ -258,5 +258,24 @@ $(document).ready(function() {
         contentType: 'html',
     });
 
+    // Show mobile menu START
+    $('.menu__icon').on('click', function () {
+        $(this).closest('.header__navigation__menu')
+            .toggleClass('menu_state_open');
+        // if ($('.header__navigation__menu').hasClass('menu_state_open')) {
+        //     $('html').addClass('menuopen');
+        //     $('body').addClass('menuopen');
+        // } else {
+        //     $('html').removeClass('menuopen');
+        //     $('body').removeClass('menuopen');
+        // }
+    });
+    // $('.menu__item').on('click', function () {
+    //     $('html').removeClass('menuopen');
+    //     $('body').removeClass('menuopen');
+    //     $(this).closest('.header__navigation__menu')
+    //         .removeClass('menu_state_open');
+    // });
+
 });
 

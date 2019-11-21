@@ -82,4 +82,19 @@
   position: relative;
 }
 
-
+@media (max-width: 414px){
+  #camera_wrap .slick-slide img{
+    object-fit: cover;
+  }
+  h2{
+    font-size: 60px !important;
+  }
+  #camera_wrap i.fas.fa-chevron-right.slick-arrow {
+    right: 130px;
+    top: 60%;
+  }
+  #camera_wrap i.fas.fa-chevron-left.slick-arrow {
+    left: 130px;
+    top: 60%;
+  }
+}

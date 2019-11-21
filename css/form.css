@@ -16,6 +16,10 @@
 .BookingForm__wrap{
     display: flex;
 }
+.form-rows{
+	display: flex;
+	justify-content: space-between;
+}
 .form-row{
     display: block;
     margin-bottom: 25px;
