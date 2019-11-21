@@ -5,7 +5,9 @@
 
 
 /*font-family: 'Pacifico', cursive;*/
-
+html, body{
+  overflow-x: hidden;
+}
 html {
 	width: 100%;
 
@@ -340,7 +342,7 @@ header h1 a img {
 
 .posts {
   background-color: #fff;
-  padding-bottom: 115px;
+  padding: 115px 0;
 }
 .section__wrap__posts {
   display: flex;
@@ -351,6 +353,7 @@ header h1 a img {
   max-width: 290px;
   height: 350px;
   position: relative;
+  margin-bottom: 40px;
 }
 .onePost:before{
   position: absolute;
@@ -367,6 +370,7 @@ header h1 a img {
 .banner img{
   border-radius: 15px;
   max-height: 350px;
+  min-width: 290px;
 }
 
 .banner .label {
@@ -543,6 +547,18 @@ i.fas.fa-chevron-left.slick-arrow {
 }
 /**ourService**/
 
+.ourService .section__wrap h4{
+  position: relative;
+}
+.ourService .section__wrap h4:before{
+  position: absolute;
+  content: 'Услуги';
+  font-size: 90px;
+  color: rgba(0, 0, 0, .05);
+  right: 50%;
+  transform: translate(45%, -29px);
+}
+
 .ourService{
   padding: 80px 0;
   background-image: url("../images/background-1.jpg");
@@ -597,25 +613,17 @@ img.ourService__wrap__item--icon {
 }
 /**photoClients**/
 
-/*.photoClients {*/
-/*  !*padding: 80px 0;*!*/
-/*  background-image: url("../images/sea.jpg");*/
-/*  background-repeat: no-repeat;*/
-/*  background-size: cover;*/
-/*  position: relative;*/
-/*}*/
-/*.photoClients:before{*/
-/*  position: absolute;*/
-/*  content: '';*/
-/*  width: 100%;*/
-/*  height: 100%;*/
-/*  background-color: rgba(121, 85, 72, 0.57);*/
-/*  top: 0;*/
-/*}*/
-/*.photoClients h4{*/
-/*  color: #ffffff;*/
-/*}*/
-
+.ourСustomers .section__wrap h4{
+  position: relative;
+}
+.ourСustomers .section__wrap h4:before{
+  position: absolute;
+  content: 'Довольные клиенты ';
+  font-size: 90px;
+  color: rgba(0, 0, 0, .05);
+  right: 50%;
+  transform: translate(45%, -29px);
+}
 
 .slider-container {
     position: relative;
@@ -883,6 +891,18 @@ img.ourService__wrap__item--icon {
 
 /**ourTeam**/
 
+.ourTeam .section__wrap h4{
+  position: relative;
+}
+.ourTeam .section__wrap h4:before{
+  position: absolute;
+  content: 'Наша команда';
+  font-size: 90px;
+  color: rgba(0, 0, 0, .05);
+  right: 50%;
+  transform: translate(45%, -29px);
+}
+
 .ourTeam{
   padding: 80px 0 120px;
 }
@@ -936,13 +956,6 @@ section.location {
   width: 100%;
 }
 
-/*.location__map__block {*/
-  /*max-width: 100%;*/
-  /*padding: 50px;*/
-  /*text-align: center;*/
-  /*z-index: 10;*/
-  /*position: relative;*/
-/*}*/
 .location__map__block--description{
   font-weight: 500;
   font-size: 20px;
@@ -1169,7 +1182,8 @@ footer:before{
 
 #galleryContainer {
     height: 500px;
-    width: 800px;
+    width: 1160px;
+    max-width: 100%;
     background: transparent;
     display: flex;
     flex-direction: row;
@@ -1259,7 +1273,7 @@ footer:before{
 
 #leftView {
     height: 400px;
-    width: 150px;
+    width: 300px;
     opacity: 0.5;
     border-radius: 5px;
     transform: skewy(5deg);
@@ -1278,7 +1292,7 @@ footer:before{
 
 #rightView {
     height: 400px;
-    width: 150px;
+    width: 300px;
     opacity: 0.5;
     border-radius: 5px;
     transform: skewy(-5deg);
@@ -1407,6 +1421,22 @@ footer:before{
 @media (max-width: 768px){
   .ourService__wrap__item{
     width: 350px;
+  }
+  section.location{
+    height: auto;
+  }
+  .location__description, .location__map {
+      width: 100%;
+      max-width: 100%;
+  }
+  .section__wrap--locations{
+    flex-direction: column;
+  }
+  .location__description{
+    padding: 25px 0;
+  }
+  .section__wrap__posts{
+    justify-content: space-evenly;
   }
 }
 
