@@ -24,6 +24,21 @@
 	margin: 50px auto 0;
 	background: white;
 	border-radius: 30px;
+	padding-top: 30px;
+}
+fieldset#fs-frm-inputs {
+	padding: 50px;
+	border: 1px solid green;
+	margin: 30px;
+}
+#fs-frm [type="text"], #fs-frm [type="email"], #fs-frm textarea {
+	width: 100%;
+}
+#fs-frm input, #fs-frm select, #fs-frm textarea {
+	border: 1px solid rgba(0,0,0,0.2);
+	background-color: rgba(255,255,255,0.9);
+	padding: .75em 1em;
+	margin-bottom: 1.5em;
 }
 .form-left-decoration,
 .form-right-decoration {
