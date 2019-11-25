@@ -6,15 +6,13 @@
   padding: 80px 0;
 	position: relative;
 }
-/*.BookingForm:before{*/
-/*	position: absolute;*/
-/*	content: '';*/
-/*	width: 100%;*/
-/*	height: 100%;*/
-/*	background-image: url("../images/background_london.jpg");*/
-/*}*/
-.BookingForm__wrap{
-    display: flex;
+.eui-widget-title{
+	font-size: 43px !important;
+	font-family: 'Pacifico' !important;
+	color: #ffffff !important;
+}
+.eapps-root, .eapps-testimonials-slider, .eapps-root *, .eapps-testimonials-slider *{
+	color: #ffffff !important;
 }
 .form-rows{
 	display: flex;
@@ -25,10 +23,37 @@
     margin-bottom: 25px;
 }
 .BookingForm__wrap__welcome-block{
-    width: 40%;
+	width: 100%;
+	padding-top: 50px;
 }
-.BookingForm__wrap__form-block{
-    width: 60%;
+
+.BookingForm__wrap__form-block{#bfbfbfdth: 60%;
+}
+legend{
+	font-family: 'Pacifico', cursive;
+	font-size: 25px;
+	text-align: center;
+	color: #d2691e;
+	padding: 15px 15px 30px;
+}
+label{
+	line-height: 40px;
+	font-family: 'Pacifico', cursive;
+	font-size: 20px;
+	color: #a52a2a;
+}
+::-webkit-input-placeholder {
+	color:#bfbfbf;
+	font-size: 14px;
+}
+::-moz-placeholder {
+	color:#bfbfbf;
+}
+:-moz-placeholder {
+	color:#bfbfbf;
+}
+:-ms-input-placeholder {
+	color:#bfbfbf;
 }
 .decor {
 	position: relative;
@@ -36,21 +61,23 @@
 	margin: 50px auto 0;
 	background: white;
 	border-radius: 30px;
-	padding-top: 30px;
+	padding: 10px;
 }
 fieldset#fs-frm-inputs {
 	padding: 50px;
-	border: 1px solid green;
 	margin: 30px;
+	border: 6px solid #f3d6c3;
+	border-radius: 35px;
 }
 #fs-frm [type="text"], #fs-frm [type="email"], #fs-frm textarea {
 	width: 100%;
 }
 #fs-frm input, #fs-frm select, #fs-frm textarea {
-	border: 1px solid rgba(0,0,0,0.2);
+	border: 2px solid rgba(0,0,0,0.2);
 	background-color: rgba(255,255,255,0.9);
-	padding: .75em 1em;
+	padding: 15px;
 	margin-bottom: 1.5em;
+	border-radius: 5px;
 }
 .form-left-decoration,
 .form-right-decoration {
