@@ -159,3 +159,6 @@ fieldset#fs-frm-inputs {
   padding-top: 30px;
   text-align: center;
 }
+#form-feedback{
+	display: none;
+}

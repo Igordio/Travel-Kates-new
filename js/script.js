@@ -276,6 +276,8 @@ $(document).ready(function() {
     //     $(this).closest('.header__navigation__menu')
     //         .removeClass('menu_state_open');
     // });
-
+    $(".add-feedback-button").click(function() {
+        $("#form-feedback").show();
+    });
 });
 
