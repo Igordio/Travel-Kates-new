@@ -7,7 +7,6 @@
 		<title>Kate'S Travel</title>
 		<meta name="format-detection" content="telephone=no" />
 		<link rel="icon" href="images/favicon.png">
-<!--		<link rel="stylesheet" href="booking/css/booking.css">-->
 		<link rel="stylesheet" href="css/camera.css">
 		<link rel="stylesheet" href="css/owl.carousel.css">
 		<link rel="stylesheet" href="css/style.css">
@@ -518,12 +517,40 @@
               <div class="elfsight-app-aeee883f-8f01-421c-8091-58dee5e38169"></div>
           </div>
             <div class="add-feedback">
-                <button class="add-feedback-button">Оставить отзыв</button>
-                <form id="form-feedback">
-                    <input type="name" name="name" placeholder="Ваше имя"><br>
-                    <input type="number" name="phone" placeholder="+79999999"><br>
-                    <button type="submit">Отправить</button>
-                </form>
+<!--                <button class="add-feedback-button">Оставить отзыв</button>-->
+
+
+                <a href="#" class='btn open-modal' data-modal="#modal1">Оставить отзыв</a>
+                <div class='modal' id='modal1'>
+                    <div class='content'>
+                        <h1 class='title'>Отзыв</h1>
+                        <div class="form__feedback">
+                            <form action="https://formspree.io/FORM_ID" method="POST">
+                                <label for="photoUpload">
+                                    Ваша фотография (jpg, jpeg, png)
+                                    <input type="file" id="photoUpload" name="myFile" accept=".jpg, .jpeg, .png" value="new language">
+                                </label>
+                                <div class="form-rows">
+                                    <label for="feed-name">
+                                        Ваше имя
+                                        <input type="text" id="feed-name" name="name">
+                                    </label>
+                                    <label for="feed-email">
+                                        Ваш Email:
+                                        <input type="email" id="feed-email" name="_replyto">
+                                    </label>
+                                </div>
+                                <label for="feed-text">
+                                    Ваш отзыв
+                                    <textarea name="message" id="feed-text"></textarea>
+                                </label>
+                                <input type="submit" value="Отправить">
+                            </form>
+                        </div>
+                        <a class='close-modal' data-modal="#modal1" href="#">Закрыть</a>
+                    </div>
+                </div>
+
             </div>
           </div>
         </div>
