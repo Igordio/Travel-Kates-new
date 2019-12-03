@@ -1,3 +1,6 @@
+// EmojiArea.DEFAULTS.assetPath = "../../images/emoji";
+
+
 // Smooth scroll blocking
 document.addEventListener( 'DOMContentLoaded', function() {
 	if ( 'onwheel' in document ) {
@@ -328,3 +331,9 @@ $(document).ready(function() {
     });
 });
 
+$(document).ready(function() {
+    $("#feed-emoji").emojioneArea({
+        container: "#image-container",
+        hideSource: false,
+    });
+});

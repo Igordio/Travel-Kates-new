@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3af3046a-5bd5-404b-b182-b0aa5baab9f3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/booking" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/chemodan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/emoji/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/emoji/emoji_spritesheet_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/emoji/emoji_spritesheet_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/emoji/emoji_spritesheet_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/emoji/emoji_spritesheet_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/emoji/emoji_spritesheet_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/form.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/form.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/skeleton.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hottours.html" beforeDir="false" afterPath="$PROJECT_DIR$/hottours.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offers.html" beforeDir="false" afterPath="$PROJECT_DIR$/offers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,20 +27,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1R6TFTB58m9mfqmQzK1UvI4IKLa" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sileo" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images/emoji" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images/emoji" />
       <recent name="$PROJECT_DIR$/images" />
     </key>
   </component>
@@ -59,58 +53,10 @@
     <configuration />
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="3af3046a-5bd5-404b-b182-b0aa5baab9f3" name="Default Changelist" comment="" />
-      <created>1568986441440</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1568986441440</updated>
-      <workItem from="1568986442560" duration="4036000" />
-      <workItem from="1569247846199" duration="207000" />
-      <workItem from="1569336579090" duration="774000" />
-      <workItem from="1569491051947" duration="2055000" />
-      <workItem from="1569828641882" duration="480000" />
-      <workItem from="1573045923883" duration="3011000" />
-      <workItem from="1573120005953" duration="22000" />
-      <workItem from="1574243952667" duration="217000" />
-      <workItem from="1574323959528" duration="18699000" />
-      <workItem from="1574672808476" duration="164000" />
-      <workItem from="1574672986821" duration="16000" />
-      <workItem from="1574848661677" duration="1549000" />
-      <workItem from="1574867866311" duration="3787000" />
-      <workItem from="1575288994996" duration="686000" />
-      <workItem from="1575293500183" duration="7081000" />
-    </task>
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="723" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1575294209646">
-      <screen x="61" y="27" width="1859" height="1053" />
-    </state>
-    <state x="723" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/61.27.1859.1053/1920.312.1366.768@61.27.1859.1053" timestamp="1575294209646" />
-    <state x="479" y="187" key="SettingsEditor" timestamp="1575297039699">
-      <screen x="61" y="27" width="1859" height="1053" />
-    </state>
-    <state x="479" y="187" key="SettingsEditor/61.27.1859.1053/1920.312.1366.768@61.27.1859.1053" timestamp="1575297039699" />
-    <state x="636" y="288" width="709" height="528" key="find.popup" timestamp="1575299323544">
-      <screen x="61" y="27" width="1859" height="1053" />
-    </state>
-    <state x="636" y="288" width="709" height="528" key="find.popup/61.27.1859.1053/1920.312.1366.768@61.27.1859.1053" timestamp="1575299323544" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fixed style and added form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed style and added form" />
   </component>
 </project>
